@@ -138,7 +138,7 @@ class TestCNESSonarQube:
             ("FPGA Metrics","1.2.0"),
             ("Gcov","1.3.0"),
             ("ModelSim","1.4.0"),
-            ("VHDLRC","2.1.0")
+            ("VHDLRC","3.3")
         )
         sonar_plugins = requests.get(f"{self.SONARQUBE_URL}/api/plugins/installed").json()['plugins']
         installed_plugins = { plugin['name']: plugin['version'] for plugin in sonar_plugins }
@@ -182,7 +182,8 @@ class TestCNESSonarQube:
             "CNES_C_EMBEDDED_A",
             "CNES_C_EMBEDDED_B",
             "CNES_C_EMBEDDED_C",
-            "CNES_C_EMBEDDED_D"
+            "CNES_C_EMBEDDED_D",
+            "VHDL-RC"
         )
         quality_profiles = requests.get(f"{self.SONARQUBE_URL}/api/qualityprofiles/search").json()['profiles']
         cnes_quality_profiles = [ qp['name'] for qp in quality_profiles if re.match(r'CNES_\w+_[ABCD]', qp['name']) ]

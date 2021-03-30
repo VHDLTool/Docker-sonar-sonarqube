@@ -104,7 +104,7 @@ With an external database, the data used by SonarQube is stored outside of the c
 | Svn                                               | 1.9.0.1295               |
 | Sonar-coverage-modelsim                           | 1.4                      |
 | Sonar-coverage-ghdl                               | 1.3                      |
-| Sonar-VHDLRC                                      | 2.1                      |
+| Sonar-VHDLRC                                      | 3.3                      |
 | sonar-FPGA-metrics                                | 1.2                      |   
 
 To update this list run:
