@@ -138,7 +138,7 @@ class TestCNESSonarQube:
             ("FPGA Metrics","1.2.0"),
             ("Gcov","1.3.0"),
             ("ModelSim","1.4.0"),
-            ("VHDLRC","3.3")
+            ("VHDLRC","3.4")
         )
         sonar_plugins = requests.get(f"{self.SONARQUBE_URL}/api/plugins/installed").json()['plugins']
         installed_plugins = { plugin['name']: plugin['version'] for plugin in sonar_plugins }

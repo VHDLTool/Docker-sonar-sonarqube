@@ -40,11 +40,7 @@ To run the image locally:
 
 ```sh
 # Recommended options
-$ docker run --name lequalsonarqubevhdl \
-             --rm \
-             -p 9000:9000 \
-             -e SONARQUBE_ADMIN_PASSWORD="admin password of your choice" \
-             lequal/sonarqube-vhdl:latest
+$ docker run --name lequalsonarqubevhdl --rm -p 9000:9000 -e SONARQUBE_ADMIN_PASSWORD="admin password of your choice" lequal/sonarqube-vhdl:latest
 
 # To stop (and remove) the container
 Ctrl-C
@@ -104,7 +100,7 @@ With an external database, the data used by SonarQube is stored outside of the c
 | Svn                                               | 1.9.0.1295               |
 | Sonar-coverage-modelsim                           | 1.4                      |
 | Sonar-coverage-ghdl                               | 1.3                      |
-| Sonar-VHDLRC                                      | 3.3                      |
+| Sonar-VHDLRC                                      | 3.4                      |
 | sonar-FPGA-metrics                                | 1.2                      |   
 
 To update this list run:
